@@ -17,7 +17,7 @@ func main() {
 		panic(err)
 	}
 
-	client := proto.NewAddServiceClient(conn)
+	client := proto.NewMathServiceClient(conn)
 
 	g := gin.Default()
 

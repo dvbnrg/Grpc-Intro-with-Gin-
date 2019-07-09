@@ -19,7 +19,7 @@ func main() {
 	}
 
 	srv := grpc.NewServer()
-	proto.RegisterAddServiceServer(srv, &server{})
+	proto.RegisterMathServiceServer(srv, &server{})
 	reflection.Register(srv)
 
 	if e := srv.Serve(listener); e != nil {
